@@ -1,0 +1,13 @@
+.container {
+  border: 2px;
+  border-color: black;
+  text-align: center;
+}
+
+.title{
+  align-self: center;
+}
+
+.new{
+  width: 25vh;
+}
