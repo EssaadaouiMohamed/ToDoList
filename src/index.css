@@ -1,6 +1,5 @@
 .container {
-  border: 2px;
-  border-color: black;
+  border: 1px solid black;
   text-align: center;
 }
 
@@ -10,4 +9,12 @@
 
 .new{
   width: 25vh;
+}
+
+.listItem {
+  border-bottom: 1px solid grey;
+  display: flex;
+  text-align: left;
+  padding: 5px;
+  margin: 2px;
 }

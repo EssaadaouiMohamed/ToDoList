@@ -1,21 +1,24 @@
 import { useState } from 'react';
-import Item from './ListItem';
 
 function TodoItem(props) {
-    const SetDone = () => {
+    const [item, setItem] = useState(props.item);
+    const SetDone = (event) => {
+        console.log(item.Name);
         setItem((item) => {
-            return (item.Done = !item.Done);
+            return { ...item, Done: event.target.checked };
         });
     };
     return (
-        <div>
+        <div >
             <input
+                className="checkbox"
                 type="checkbox"
                 onChange={SetDone}
-                checked={props.Done}
-                name={props.Id}
-            />{' '}
-            <label for={props.Id}>{props.Name}</label>
+                checked={item.Done}
+                name={item.Id}
+                id={item.Id}
+            />
+            <label htmlFor={item.Id}>{item.Name}</label>
         </div>
     );
 }
