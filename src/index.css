@@ -1,20 +1,4 @@
-.container {
-  border: 1px solid black;
-  text-align: center;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-.title{
-  align-self: center;
-}
-
-.new{
-  width: 25vh;
-}
-
-.listItem {
-  border-bottom: 1px solid grey;
-  display: flex;
-  text-align: left;
-  padding: 5px;
-  margin: 2px;
-}
